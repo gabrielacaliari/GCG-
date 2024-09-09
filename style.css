@@ -38,13 +38,6 @@ body {
     
 }
 
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 100%;
-}
-
 .principal {
     background-image: url("fundo.png");
     background-repeat: no-repeat;
@@ -60,12 +53,23 @@ body {
 }
 
 .titulo {
-    font-size: 2em;
+    font-size: 40px;
     margin-bottom: 1em;
     font-family: var(--fonte1);
     width: 100%; 
     max-width: 600px; 
     margin-left: 30px;
+  text-align: center;
+}
+
+.tamanho {
+    font-size: 25px;
+    color: #00ffea;
+}
+
+.imagem {
+    height: 150px;
+    margin-left: 50px;
 }
 
 .botao, .botao2 {
@@ -89,18 +93,84 @@ body {
     border: 2px solid white;
 }
 
+.botao:hover {
+    background-color: var(--botaoefeito);
+    color: var(--botao);
+}
 
-.imagem {
+.botao2:hover {
+    background-color: var(--botaoefeito);
+    color: var(--botao);
+}
+
+.aviso{
+    font-size: 12px;
+    color: #C0C0C0;
+    font-family: var(--fonte2);
+    margin-left: 170px;
+}
+
+/*PÁGINA 2 */
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+.menuitem {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.menutitulo {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6F6A6E;
+    text-decoration: double;
+    
+}
+
+.menuimagem {
+    width: 150px;
     height: 150px;
-    margin-left: 50px;
+    object-fit: cover;
+}
+
+.menuinfo {
+    padding: 20px;
+}
+
+.itemmenu {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.descricao2 {
+font-size: 13px;
+color: #686565;
+font-family: var(--fonte2);
+text-align: justify;
+}
+
+.preco {
+    font-size: 1.2em;
+    color: rgb(0,255,0);
+    font-weight: bold;
+  text-decoration: none;
 }
 
 
-.tamanho {
-    font-size: 25px;
-    color: #00ffea;
-}
-
+/*PÁGINA 3 */
 .imagem2 {
     width: 80%;
 }
@@ -113,7 +183,7 @@ body {
     gap: 20px; 
 }
 
-.titulo {
+.titulo2 {
     font-weight: 700;
     font-size: 45px;
     color: white;
@@ -122,13 +192,25 @@ body {
     text-align: center;
 }
 
-.descricao2 {
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    font-family: var(--fonte2);
+.imagem2 {
+    width: 90%;
+    margin: 0px;
 }
 
+.descricao{
+  text-align: center;
+  font-family: var(--fonte2);
+  font-size: 25px;
+}
+.titulo3 {
+    font-weight: 700;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 1em;
+    font-family: var(--fonte1);
+    text-align: center;
+  margin-top: 30px;
+}
 .dispositivos {
     text-align: center;
 }
@@ -182,250 +264,7 @@ body {
     height: 100px;
 }
 
-.botao:hover {
-    background-color: var(--botaoefeito);
-    color: var(--botao);
-}
-
-.botao2:hover {
-    background-color: var(--botaoefeito);
-    color: var(--botao);
-}
-
-.menu {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-}
-
-.menuitem {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
 
 
-.menutitulo {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #fcaef1;
-    text-decoration: double;
-    
-}
-
-.menuimagem {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.menuinfo {
-    padding: 20px;
-}
-
-.itemmenu {
-    font-size: 1.5em;
-    color: #333;
-}
-
-.descricao {
-    margin: 10px 0;
-    font-size: 1em;
-    color: #666;
-}
-
-.preco {
-    font-size: 1.2em;
-    color: rgb(0,255,0);
-    font-weight: bold;
-}
 
 
-.aviso{
-    font-size: 12px;
-    color: #C0C0C0;
-    font-family: var(--fonte2);
-    margin-left: 170px;
-}
-
-.imagem{
-    margin: 1em 0 2em 0;
-    height: 150px;
-}
-
-
-.tamanho{
-    font-size: 25px;
-    color:#00ffea;
-}
-
-.imagem2 {
-    width: 90%;
-    margin: 0px;
-}
-
-.secundario {
-    align-items: center;
-    margin: 0 10em;
-}
-
-.titulo2 {
-    font-weight: 700;
-    font-size: 45px;
-    color: white;
-    margin-bottom: 1em;
-    font-family: var(--fonte1);
-    text-align: center;
-}
-
-.titulo3 {
-    font-weight: 700;
-    font-size: 45px;
-    color: white;
-    margin-bottom: 1em;
-    font-family: var(--fonte1);
-    text-align: center;
-}
-
-.descricao{
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    font-family: var(--fonte2);
-    align-items: center;
-}
-
-.dispositivos {
-    text-align: center;
-}
-
-.dispositivos img{
-  height: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.item {
-    font-size: 32px;
-    color: white;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.rodape {
-    text-align: center;
-    margin: 5em 3em;
-}
-
-.lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 1em;
-    font-family: var(--fonte2);
-}
-
-.rodapelista{
-    display: flex;  
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 1em;
-    font-family: var(--fonte2);
-}
-
-.listalink a{
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    margin-left: 1em;
-    
-}
-
-.rodapetexto {
-    margin: 1em 0;
-    color: var(--cortextopitico);
-    font-size: 14px;
-}
-
-.listalink a:hover {
-    color: var(--botaoefeito);
-}
-
-.listalink a:active {
-    color: purple;
-}
-
-.logo2{
-    height: 100px;
-}
-
-.botao:hover {
-    background-color: var(--botaoefeito);
-    color: var(--botao);
-}
-
-.botao2:hover {
-    background-color: var(--botaoefeito);
-    color: var(--botao);
-}
-
-
-.menu {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  align-content: center;
-}
-
-.menutitulo {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.menuitem {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.menuimagem {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.menuinfo {
-    padding: 20px;
-}
-
-.itemmenu {
-    font-size: 1.5em;
-    color: #333;
-}
-
-.descricao2 {
-    margin: 10px 0;
-    font-size: 1em;
-    color: #666;
-}
-
-.preco {
-    font-size: 1.2em;
-    color: rgb(0,255,0);
-    font-weight: bold;
-  text-decoration: none;
-  
-}
